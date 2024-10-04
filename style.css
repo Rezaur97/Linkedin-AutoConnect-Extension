@@ -1,0 +1,87 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #20232a;
+  color: #ffffff;
+  text-align: center;
+  width: 230px; /* Adjusted width */
+  height: 50px; /* Reduced height */
+}
+
+.container {
+  padding: 10px; /* Reduced padding */
+}
+
+h1 {
+  font-size: 16px; /* Slightly smaller font */
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+p {
+  font-size: 13px;
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Styling for the outer circle around the counter */
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-circle {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the counter */
+.counter {
+  font-size: 28px; /* Smaller counter size */
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Start/Stop button styles */
+.start-btn, .stop-btn {
+  margin-top: 20px; /* Reduced margin */
+  background-color: #36b37e;
+  border: none;
+  color: white;
+  padding: 12px 0; /* Reduced padding */
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-btn:hover {
+  background-color: #29a36d;
+}
+
+.stop-btn {
+  background-color: #ff6f61;
+}
+
+.stop-btn:hover {
+  background-color: #e65a50;
+}
+
+.loading {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0077b5; /* LinkedIn blue color */
+    text-align: center;
+    font-weight: bold;
+}
+

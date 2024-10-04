@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Auto Connector",
+  "version": "1.0",
+  "description": "Automatically sends connection requests to LinkedIn profiles in a search.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "notifications"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://www.linkedin.com/*"
+  ]
+}
+
